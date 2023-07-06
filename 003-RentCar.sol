@@ -3,7 +3,7 @@
 pragma solidity ^0.8.17;
 
 // Created RentOurCar Contract
-contract CarRent {
+contract RentCar {
     // Platform Fee to rent a car is 1 Ether (ETH)
     uint public rentFee = 1 ether;
 
