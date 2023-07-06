@@ -32,15 +32,14 @@ contract RentCar {
 
     // }
     function rentCar() public payable {
-        // - Users should be able to rent a car by paying 1 Ether.
+        //    - Users should be able to rent a car by paying 1 Ether.
         require(msg.value >= rentFee, "Insufficient funds.");
         //    - The contract should store the details of the user and the rented car.
-
         //    - Users should not be able to rent more than one car at a time.
     }
 
     function returnCar() public {
-        //         - contract should be able to return a rented car.
+        //    - contract should be able to return a rented car.
         //    - The contract should verify that the user has rented the specified car
         //    - The contract should refund 75% of the Ether used as a fee to the user.
     }
